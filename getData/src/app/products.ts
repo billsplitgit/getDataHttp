@@ -1,14 +1,3 @@
-// export interface Iusers{
-//     productId: number;
-//     productName: string;
-//     productCode: string;
-//     releaseDate: string;
-//     description: string;
-//     price: number;
-//     starRating: number;
-//     imageUrl: string;
-// }
-
 export interface Iusers{
     id : number;
     username : string;
@@ -30,4 +19,11 @@ export interface Iusers{
         catchPhrase: string;
         bs: string;
     };
+}
+
+export interface Iposts{
+    userId: number;
+    id: number;
+    title: string;
+    body: string;
 }
