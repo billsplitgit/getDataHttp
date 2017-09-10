@@ -11,8 +11,8 @@ import { Iusers, Iposts } from "./products";
 @Injectable()
 export class ProductsService {
 
-  private _productUrl = 'https://jsonplaceholder.typicode.com/users';
-  private _postsUrl = 'https://jsonplaceholder.typicode.com/posts/';
+  private _productUrl ='assets/api/users.json'// 'https://jsonplaceholder.typicode.com/users';
+  private _postsUrl = 'assets/api/posts.json'// 'https://jsonplaceholder.typicode.com/posts/';
   constructor(private _httpc : HttpClient, private _http : Http) { }
 
   getUsers() : Observable<Iusers[]>{

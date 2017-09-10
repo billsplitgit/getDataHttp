@@ -1,15 +1,76 @@
-
-  <div>
-    <ul>
-      <li *ngFor = "let user of users">
-        <span>{{user.id}}</span>
-      </li>
-      
-    </ul>
-    <ul>
-        <li *ngFor = "let post of posts">
-            <span>{{post.id}}</span>
-          </li>
-    </ul>
-  </div>
-
+<header class= 'header'>This is Header</header>
+<main id='content' class = 'mainContent'>
+  <aside>
+    <a>Show User Details</a>
+    <a>Show Posts</a>
+  </aside>
+  <section id ="data">
+    <table id='users'>
+      <tr class="userHeader">
+        <th>ID</th>
+        <th>Name</th>
+        <th>username</th>
+        <th>email</th>
+        <th>address</th>
+        <th>phone</th>
+        <th>website</th>
+        <th>company</th>
+      </tr>
+      <tr class="userRows" *ngFor ="let user of users">
+        <td class="userCells">{{user.id}}</td>
+        <td class="userCells">{{user.name}}</td>
+        <td class="userCells">{{user.username}}</td>
+        <td class="userCells">{{user.email}}</td>
+        <td class="userCells">
+          <table>
+            <tr class="userAddressHeadr">
+              <th>street</th>
+              <th>suite</th>
+              <th>city</th>
+              <th>zipcode</th>
+              <th>geo</th>
+            </tr>
+            <tr class="userAddressRow">
+              <td>{{user.address.street}}</td>
+              <td>{{user.address.suite}}</td>
+              <td>{{user.address.strcityeet}}</td>
+              <td>{{user.address.zipcode}}</td>
+              <td>
+                <table>
+                  <tr class="useraddGeoH">
+                    <th>lat</th>
+                    <th>lng</th>
+                  </tr>
+                  <tr class="useraddGeoR">
+                    <td>{{user.address.geo.lat}}</td>
+                    <td>{{user.address.geo.lng}}</td>
+                  </tr>
+                </table>
+              </td>
+            </tr>
+          </table>
+        </td>
+        <td class="userCells">{{user.phone}}</td>
+        <td class="userCells">{{user.website}}</td>
+        <td class="userCells">
+          <table>
+            <tr class="userCmpH">
+              <th>name</th>
+              <th>catchPhrase</th>
+              <th>bs</th>
+            </tr>
+            <tr class="userCmpR">
+              <td>{{user.company.name}}</td>
+              <td>{{user.company.catchPhrase}}</td>
+              <td>{{user.company.bs}}</td>
+            </tr>
+          </table>
+        </td>
+        
+      </tr>
+    </table>
+    
+  </section>
+  
+</main>
+<footer class='footer'>This is Footer</footer>

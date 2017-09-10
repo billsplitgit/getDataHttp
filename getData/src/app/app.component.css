@@ -1,0 +1,48 @@
+
+
+.mainContent{
+    display: flex;
+    width:100%;
+    
+}
+
+header,footer{
+    text-align: center;
+}
+
+.mainContent aside{
+   align-self: center;
+    width:10%;
+}
+
+.mainContent section{
+    width:80%;
+    font-size: 12px;
+}
+
+table#users{
+    /* background-color: #e2e2e2; */
+}
+
+table#users tr.userHeader{
+    background-color: rebeccapurple;
+}
+table#users tr.userHeader>th{
+    color: cyan
+}
+
+table#users tr.userRows:nth-child(odd){
+    background-color: #e2e2e2;
+}
+
+table#users tr.userRows:nth-child(odd) tr.userAddressHeadr, table#users tr.userRows:nth-child(odd) tr.userCmpH , table#users tr.userRows:nth-child(even) tr.userCmpH, table#users tr.userRows:nth-child(even) tr.useraddGeoH{
+    background-color: #f1e1d1;
+}
+
+table#users tr.userRows:nth-child(even) tr.userAddressHeadr, table#users tr.userRows:nth-child(even) tr.userCmpH, table#users tr.userRows:nth-child(odd) tr.useraddGeoH{
+    background-color: #d1e1f1;
+}
+
+table#users tr.userRows:nth-child(even){
+    background-color: #f1e1e1;
+}
