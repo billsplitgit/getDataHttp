@@ -1,0 +1,32 @@
+#posts{
+    display: inline-flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+#posts .postRow{
+    display: flex;
+    flex-direction: row;
+}
+
+#posts .postInfo{
+/* flex-grow: 1; */
+border: 1px solid black;
+width:45%
+}
+
+#posts .postBody{
+    /* flex-grow: 5; */
+    justify-content: center;
+    border: 1px solid blue;
+    width:55%
+}
+.postBody span{
+    justify-content: center;
+}
+
+#posts div{
+    border: 1px solid red;
+    margin: 1px;
+}
+
+

@@ -1,28 +1,28 @@
-export interface Iusers{
-    id : number;
+export interface Iusers {
+    id: number;
     name: string;
-    username : string;
-    email : string;
-    address : {
-        street : string;
-        suite : string;
-        city : string;
-        zipcode : string;
-        geo : {
+    username: string;
+    email: string;
+    address: {
+        street: string;
+        suite: string;
+        city: string;
+        zipcode: string;
+        geo: {
             lat: string;
             lng: string;
         };
     };
     phone: string;
     website: string;
-    company:{
+    company: {
         name: string;
         catchPhrase: string;
         bs: string;
     };
 }
 
-export interface Iposts{
+export interface Iposts {
     userId: number;
     id: number;
     title: string;

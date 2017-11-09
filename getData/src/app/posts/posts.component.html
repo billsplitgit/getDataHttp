@@ -1,0 +1,10 @@
+<div id='posts'>
+  <div class = 'postRow' *ngFor = "let post of posts">
+    <div class="postInfo">
+      <div class='postsId'>{{post.id}}</div>
+      <div class='postsUserId'>{{post.userId}}</div>
+      <div class='postsTitle'>{{post.title}}</div>
+    </div>
+    <div class='postBody'><span>{{post.body}}</span></div>
+  </div>
+</div>
